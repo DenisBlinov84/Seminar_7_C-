@@ -23,6 +23,15 @@ int[,] MassSimple(int row, int column)
     for (int i = 0; i < row; i++)
         for (int j = 0; j < column; j++)
             arr[i, j] = i + j;
+            // row = 0, column = 0, mean = 0 + 0 = 0
+            // row = 0, column = 1, mean = 0 + 1 = 1
+            // row = 0, column = 2, mean = 0 + 2 = 2
+            // row = 0, column = 3, mean = 0 + 3 = 3
+
+            // row = 1, column = 0, mean = 1 + 0 = 1
+            // row = 1, column = 1, mean = 1 + 1 = 2
+            // row = 1, column = 2, mean = 1 + 2 = 3
+            // row = 1, column = 3, mean = 1 + 3 = 4
 
     return arr;
 }
